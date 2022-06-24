@@ -55,7 +55,7 @@ class Gejala extends MY_CONTROLLER
         //     'message'=>'parameter is invalid'
         //   );
         // }
-        $json = json_encode($data, JSON_PRETTY_PRINT);
+        $json = json_encode($get, JSON_PRETTY_PRINT);
         echo $json;
     }
 }

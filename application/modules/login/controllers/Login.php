@@ -19,11 +19,6 @@ class Login extends MY_Controller
     $this->load->view('login');
   }
 
-  public function register()
-  {
-    $this->load->view('regis');
-  }
-
   public function logout()
   {
     $this->session->sess_destroy();

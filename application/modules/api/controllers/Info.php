@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Penyakit extends MY_CONTROLLER
+class Info extends MY_CONTROLLER
 {
 
     public function __construct()
@@ -29,7 +29,7 @@ class Penyakit extends MY_CONTROLLER
         //   }
         //End Pagination
         //default fungsi dari : getdata($table,$where=null,$limit=9,$offset=0){
-        $table = 'tb_m_penyakit';
+        $table = 'tb_m_informasi';
         $loadDb = $this->Dbs->getdata($table, null, 100); //database yang akan di load
         $check = $loadDb->num_rows();
         if ($check > 0) {

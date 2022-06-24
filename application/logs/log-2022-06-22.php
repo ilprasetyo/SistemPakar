@@ -113,3 +113,19 @@ ERROR - 2022-06-22 08:27:45 --> 404 Page Not Found: /index
 ERROR - 2022-06-22 08:27:47 --> 404 Page Not Found: /index
 ERROR - 2022-06-22 08:27:48 --> 404 Page Not Found: /index
 ERROR - 2022-06-22 08:28:07 --> 404 Page Not Found: /index
+ERROR - 2022-06-22 09:45:38 --> 404 Page Not Found: /index
+ERROR - 2022-06-22 14:09:55 --> Severity: Warning --> mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\git\SistemPakar\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-06-22 14:09:55 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\git\SistemPakar\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-06-22 14:09:55 --> Unable to connect to the database
+ERROR - 2022-06-22 14:10:59 --> Severity: Warning --> mysqli::real_connect(): php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\git\SistemPakar\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-06-22 14:10:59 --> Severity: Warning --> mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: No such host is known.  C:\xampp\htdocs\git\SistemPakar\system\database\drivers\mysqli\mysqli_driver.php 201
+ERROR - 2022-06-22 14:10:59 --> Unable to connect to the database
+ERROR - 2022-06-22 14:14:07 --> 404 Page Not Found: /index
+ERROR - 2022-06-22 14:14:33 --> 404 Page Not Found: /index
+ERROR - 2022-06-22 14:15:06 --> 404 Page Not Found: /index
+ERROR - 2022-06-22 14:15:17 --> 404 Page Not Found: /index
+ERROR - 2022-06-22 15:56:33 --> Severity: Error --> Maximum execution time of 120 seconds exceeded C:\xampp\htdocs\git\SistemPakar\system\core\Common.php 597
+ERROR - 2022-06-22 15:56:48 --> Severity: Error --> Maximum execution time of 120 seconds exceeded C:\xampp\htdocs\git\SistemPakar\system\core\Common.php 597
+ERROR - 2022-06-22 15:57:09 --> Severity: Error --> Maximum execution time of 120 seconds exceeded C:\xampp\htdocs\git\SistemPakar\system\core\Common.php 597
+ERROR - 2022-06-22 15:57:50 --> Severity: Error --> Maximum execution time of 120 seconds exceeded C:\xampp\htdocs\git\SistemPakar\system\core\Common.php 597
+ERROR - 2022-06-22 15:59:54 --> Severity: Error --> Maximum execution time of 120 seconds exceeded C:\xampp\htdocs\git\SistemPakar\system\core\Common.php 597
