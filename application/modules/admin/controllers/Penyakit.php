@@ -48,6 +48,7 @@
               $row[] = $no;
 							$row[] = $Penyakit_model->Kode_Penyakit;
 							$row[] = $Penyakit_model->Nama_Penyakit;
+							$row[] = $Penyakit_model->Ciri;
 							$row[] = $Penyakit_model->Solusi;
 							$row[] = $Penyakit_model->Gambar;
 							
@@ -103,6 +104,7 @@ public function create_action()
             $data = array(
 					'Kode_Penyakit' => $this->input->post('Kode_Penyakit',TRUE),
 					'Nama_Penyakit' => $this->input->post('Nama_Penyakit',TRUE),
+					'Ciri' => $this->input->post('Ciri',TRUE),
 					'Solusi' => $this->input->post('Solusi',TRUE),
 					'Gambar' => $this->input->post('Gambar',TRUE),
 					
@@ -127,6 +129,7 @@ public function create_action()
             $data = array(
 					'Kode_Penyakit' => $this->input->post('Kode_Penyakit',TRUE),
 					'Nama_Penyakit' => $this->input->post('Nama_Penyakit',TRUE),
+					'Ciri' => $this->input->post('Ciri',TRUE),
 					'Solusi' => $this->input->post('Solusi',TRUE),
 					'Gambar' => $this->input->post('Gambar',TRUE),
 					
@@ -156,6 +159,7 @@ public function create_action()
     {
 $this->form_validation->set_rules('Kode_Penyakit', 'Kode_Penyakit', 'trim|required');
 $this->form_validation->set_rules('Nama_Penyakit', 'Nama_Penyakit', 'trim|required');
+$this->form_validation->set_rules('Ciri', 'Ciri', 'trim|required');
 $this->form_validation->set_rules('Solusi', 'Solusi', 'trim|required');
 $this->form_validation->set_rules('Gambar', 'Gambar', 'trim|required');
 
