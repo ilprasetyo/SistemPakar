@@ -19,9 +19,11 @@
 							$this->column_order[]='Kode_Penyakit';
 							$this->column_order[]='Nama_Penyakit';
 							$this->column_order[]='Solusi';
+							$this->column_order[]='Gambar';
 							$this->column_search[]='Kode_Penyakit';
 							$this->column_search[]='Nama_Penyakit';
 							$this->column_search[]='Solusi';
+							$this->column_search[]='Gambar';
 							
         }
 
