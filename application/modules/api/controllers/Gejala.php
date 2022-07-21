@@ -58,4 +58,54 @@ class Gejala extends MY_CONTROLLER
         $json = json_encode($get, JSON_PRETTY_PRINT);
         echo $json;
     }
+
+    function getdatarec()
+    {
+        header('Content-Type: application/json');
+        // if(isset($_GET['params'])){//params yang akan dicek
+        //   //StartPagination
+        //   if(isset($_GET['page'])){//cek parameter page
+        //     $page=$_GET['page'];
+        //   }else{
+        //     $page=1;//default jika parameter page tidak diload
+        //   }
+        //   $limitDb=9;
+        //   $offsetDb=0;
+        //   if($page!=1 and $page!=0){
+        //     $offsetDb=$limitDb*($page-1);
+        //   }
+        //End Pagination
+        //default fungsi dari : getdata($table,$where=null,$limit=9,$offset=0){
+        $table = 'tb_m_gejala';
+        $where = 'id >';
+        $value = 25;
+        $loadDb = $this->Dbs->getwhere($where, $value, $table); //database yang akan di load
+        $check = $loadDb->num_rows();
+        if ($check > 0) {
+            $get = $loadDb->result(); //Uncomment ini untuk contoh
+            $data = array(
+                'status' => 'success',
+                'message' => 'found',
+                'total_result' => $check,
+                // 'results'=>"ISI DARI RESULT DATABASE",
+                'results' => $get //Uncomment ini untuk contoh
+            );
+        } else {
+            $data = array(
+                'status' => 'success',
+                'total_result' => $check,
+                'message' => 'not found'
+            );
+        }
+
+        // }else{
+        //   $data=array(
+        //     'status'=>'failed',
+        //     'message'=>'parameter is invalid'
+        //   );
+        // }
+
+        $json = json_encode($get, JSON_PRETTY_PRINT);
+        echo $json;
+    }
 }
